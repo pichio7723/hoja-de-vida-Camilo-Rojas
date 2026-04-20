@@ -30,6 +30,11 @@ source venv/Scripts/activate   # En Git Bash
 #cuando el venv este activado
 pip install -r requirements.txt
 
+#si toca manual
+pip install fastapi uvicorn
+uvicorn main:app --reload
+
+
 #para frontend
 cd frontend
 npm install
