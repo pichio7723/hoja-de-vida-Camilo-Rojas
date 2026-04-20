@@ -25,7 +25,5 @@ dist-ssr
 
 # Python
 backend/venv/
-__pycache__/
-
 # Otros temporales
 *.local
