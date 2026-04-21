@@ -1,13 +1,16 @@
 import React from "react";
 
-//importar imágenes
 import gym from "../assets/gym.jpg";
 import programar from "../assets/programacion.jpg";
 import juegos from "../assets/zelda.gif";
+import Musica from "../assets/foto cantante.jpg";
+
 
 function Hobbies() {
 
   const hobbies = [
+
+    
     {
       nombre: "💪 GYM",
       imagen: gym,
@@ -22,7 +25,19 @@ function Hobbies() {
       nombre: "🎮 Videojuegos",
       imagen: juegos,
       desc: "me gustan los videosjuegos, fueron mi inspiracion para comenzar a programar estos fueron mi inicio con el software y gracias a ellos he adquirido habilidades como el trabajo en equipo, la comunicacion y la coordinacion."
+    },
+    {
+      nombre: "🎵 Musica",
+      imagen: Musica,
+      desc: "hola hola hola."
+    },
+    {
+      nombre: "📚 Lectura",
+      imagen: juegos,
+      desc: "hola hola hola."
     }
+
+
   ];
 
   return (
@@ -30,22 +45,39 @@ function Hobbies() {
       <h2 style={styles.title}>Mis Hobbies</h2>
 
       <div style={styles.list}>
-        {hobbies.map((hobby, index) => (
-          <div key={index} style={styles.card}>
-            
+        {hobbies.map((hobby) => (
+          <div
+            key={hobby.nombre}
+            style={styles.card}
+
+            onMouseEnter={(e) => {
+              e.currentTarget.style.transform = "scale(1.05)";
+              e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.5)";
+            }}
+
+            onMouseLeave={(e) => {
+              e.currentTarget.style.transform = "scale(1)";
+              e.currentTarget.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+            }}
+          >
             <h3>{hobby.nombre}</h3>
 
-            <img src={hobby.imagen} style={styles.img} />
+            <img
+              src={hobby.imagen}
+              alt={hobby.nombre}
+              style={styles.img}
+            />
 
             <p>{hobby.desc}</p>
-
           </div>
         ))}
       </div>
+
     </div>
   );
 }
 
+//esto va a fuera del compenente
 const styles = {
   container: {
     padding: "50px",
@@ -59,7 +91,7 @@ const styles = {
 
   list: {
     display: "flex",
-    flexDirection: "column", // (vertical)
+    flexDirection: "column",
     alignItems: "center",
     gap: "60px"
   },
@@ -68,7 +100,9 @@ const styles = {
     background: "#1e293b",
     padding: "20px",
     borderRadius: "10px",
-    width: "800px"
+    width: "800px",
+    transition: "0.3s",
+    boxShadow: "0 5px 15px rgba(0,0,0,0.3)"
   },
 
   img: {
