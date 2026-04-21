@@ -39,3 +39,6 @@ uvicorn main:app --reload
 cd frontend
 npm install
 npm run dev
+
+#comando de extencion
+npm install react-router-dom
