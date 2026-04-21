@@ -10,17 +10,17 @@ function Hobbies() {
 
         <div style={styles.card}>
           <h3>💪 GYM</h3>
-          <p>Me gusta entrenar en mi tiempo libre.</p>
+          <p>llevo entrenando 2 años y medio, entreno mas fuerza me gustan los desafios y estoy listo para soportar un peso mayor al promedio que levanto.</p>
         </div>
 
         <div style={styles.card}>
           <h3>💻 Programar</h3>
-          <p>Disfruto crear proyectos y aprender nuevas tecnologías.</p>
+          <p>Disfruto crear proyectos, he llevado dos años desde mi tecnico aprendiendo nuevas tecnologias, las mas usadas de el mercado desde estos ultimos años hasta las mejores de 2026.</p>
         </div>
 
         <div style={styles.card}>
           <h3>🎮 Videojuegos</h3>
-          <p>Juego para relajarme y competir.</p>
+          <p>me gustan los videosjuegos, fueron mi inspiracion para comenzar a programar estos fueron mi inicio con el software y gracias a ellos he adquirido habilidades como el trabajo en equipo, la comunicacion y la coordinacion.</p>
         </div>
 
       </div>
