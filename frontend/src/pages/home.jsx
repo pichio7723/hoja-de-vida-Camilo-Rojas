@@ -1,10 +1,4 @@
 function Home() {
-    return(
-        <div>
-            <h1>jhoan taputapi</h1>
-            <p>jhoan mi hijo</p>
-        </div>
-    );
+  return <h1>Página principal</h1>;
 }
-
 export default Home;
