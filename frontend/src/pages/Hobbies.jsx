@@ -3,7 +3,9 @@ import React from "react";
 import gym from "../assets/gym.jpg";
 import programar from "../assets/programacion.jpg";
 import juegos from "../assets/zelda.gif";
-import Musica from "../assets/foto cantante.jpg";
+import Musica from "../assets/musica.jpg";
+import Lectura from "../assets/lectura.jpg"
+
 
 
 function Hobbies() {
@@ -29,12 +31,12 @@ function Hobbies() {
     {
       nombre: "🎵 Musica",
       imagen: Musica,
-      desc: "hola hola hola."
+      desc: "me gusta mucho la musica electronica, sobretodo el techno y el metal, aunque algo que nunca falta en mi playlist es el Hard techno."
     },
     {
       nombre: "📚 Lectura",
-      imagen: juegos,
-      desc: "hola hola hola."
+      imagen: Lectura,
+      desc: "me gusta mucho leer, es la fuente de mi conocimiento y los libros son perfectamente sabios para ofrecer un conocimiento basto y entretenimiento creativo."
     }
 
 
