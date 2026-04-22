@@ -7,7 +7,7 @@ function HojaDeVida() {
         src={hojaDeVidaPDF}
         type="application/pdf"
         width="100%"
-        height="1000px"
+        height="800px"
       />
     </div>
   );
