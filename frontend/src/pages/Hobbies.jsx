@@ -45,7 +45,7 @@ function Hobbies() {
 
   return (
   <div className="container">
-    <h2 className="title">Mis Hobbies Favortitos</h2>
+    <h2 className="title">Mis Hobbies Favoritos</h2>
 
     <div className="list">
       {hobbies.map((hobby) => (
