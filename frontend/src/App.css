@@ -187,7 +187,11 @@
 /* CAMBIOS CAMILO */
 
 .page-layout {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* sombra blanca suave */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  align-items: center; /* sombra blanca suave */
+  width: 100%;
 }
 
 
@@ -200,7 +204,8 @@
   padding: 40px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
   width: 100%;        /* ocupa todo el ancho disponible */
-  max-width: none;    /* elimina el límite artificial */
+  max-width: 1200px;
+  box-sizing: border-box;    /* elimina el límite artificial */
   margin: 0;          /* quita el centrado automático */
 }
 
@@ -292,6 +297,9 @@
   background-color: #000000; /* negro puro */
   padding: 15px 40px;        /* más espacio alrededor */
   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* sombra blanca ligera */
+  margin: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2); /* línea clara en vez de sombra */
+  box-shadow: none; /* elimina sombra si está empujando */
 }
 
 .nav-list {
