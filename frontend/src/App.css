@@ -339,7 +339,7 @@ body {
 
 .stack-img {
   max-width: 600px;       /* se adapta al ancho central */
-  width: 100%;
+  width: 450px;
   height: auto;
   border-radius: 12px;    /* bordes redondeados */
   filter: brightness(0.9);
@@ -350,6 +350,26 @@ body {
   color: #00e0ff; /* turquesa brillante */
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
   transition: 0.3s ease;
+}
+
+.toggle-btn {
+  padding: 14px 28px;              /* más grande */
+  margin: 25px 0;
+  background-color: #000000;       /* fondo negro */
+  color: #ffffff;                  /* texto blanco */
+  font-weight: bold;
+  font-size: 1.2rem;               /* texto más grande */
+  border: none;
+  border-radius: 12px;             /* bordes más redondeados */
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); /* sombra blanca */
+}
+
+.toggle-btn:hover {
+  background-color: #ffffff;       /* fondo blanco */
+  color: #000000;                  /* texto negro */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* sombra más intensa al hover */
 }
 
 
