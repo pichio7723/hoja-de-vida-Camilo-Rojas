@@ -184,6 +184,7 @@
 }
 
 
+
 .page-layout {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* sombra blanca suave */
 }
@@ -213,12 +214,12 @@
 }
 
 /* Ajuste responsive: en pantallas medianas y pequeñas */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .sidebar-right {
-    position: static;   /* ya no fijo */
+    position: static;    /* se integra al flujo */
     transform: none;
-    width: 100%;        /* ocupa todo el ancho */
-    margin-top: 20px;   /* se separa del contenido */
+    width: 100%;         /* ocupa todo el ancho */
+    margin-top: 20px;    /* se separa del contenido */
   }
 }
 
