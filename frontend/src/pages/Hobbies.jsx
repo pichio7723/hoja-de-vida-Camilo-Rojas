@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import gym from "../assets/gym.jpg";
 import programar from "../assets/programacion.jpg";
 import juegos from "../assets/zelda.gif";
@@ -43,75 +44,29 @@ function Hobbies() {
   ];
 
   return (
-    <div style={styles.container}>
-      <h2 style={styles.title}>Mis Hobbies</h2>
+  <div className="container">
+    <h2 className="title">Mis Hobbies Favortitos</h2>
 
-      <div style={styles.list}>
-        {hobbies.map((hobby) => (
-          <div
-            key={hobby.nombre}
-            style={styles.card}
+    <div className="list">
+      {hobbies.map((hobby) => (
+        <div key={hobby.nombre} className="card">
 
-            onMouseEnter={(e) => {
-              e.currentTarget.style.transform = "scale(1.05)";
-              e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.5)";
-            }}
+          <h3>{hobby.nombre}</h3>
 
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "scale(1)";
-              e.currentTarget.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
-            }}
-          >
-            <h3>{hobby.nombre}</h3>
+          <img
+            src={hobby.imagen}
+            alt={hobby.nombre}
+            className="img"
+          />
 
-            <img
-              src={hobby.imagen}
-              alt={hobby.nombre}
-              style={styles.img}
-            />
+          <p>{hobby.desc}</p>
 
-            <p>{hobby.desc}</p>
-          </div>
-        ))}
-      </div>
-
+        </div>
+      ))}
     </div>
-  );
+
+  </div>
+);
 }
-
-//esto va a fuera del compenente
-const styles = {
-  container: {
-    padding: "50px",
-    color: "white",
-    textAlign: "center"
-  },
-
-  title: {
-    marginBottom: "100px"
-  },
-
-  list: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    gap: "60px"
-  },
-
-  card: {
-    background: "#1e293b",
-    padding: "20px",
-    borderRadius: "10px",
-    width: "800px",
-    transition: "0.3s",
-    boxShadow: "0 5px 15px rgba(0,0,0,0.3)"
-  },
-
-  img: {
-    width: "100%",
-    borderRadius: "10px",
-    margin: "10px 0"
-  }
-};
 
 export default Hobbies;
