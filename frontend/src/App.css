@@ -336,3 +336,51 @@ body {
   transition: 0.3s ease;
 }
 
+
+
+
+/* Cambios johan */
+
+
+/* container */
+.container {
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+/* title */
+.title {
+  margin-bottom: 100px;
+}
+
+/* list */
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+/* card */
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  width: 800px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/*hover */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* img */
+.img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
