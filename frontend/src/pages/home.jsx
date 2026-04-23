@@ -25,16 +25,16 @@ function Home() {
             </p>
           </section>
 
+          <section className="stack-section">
+            <h3 className="Stack">Mi Stack</h3>
+            <img src={Tecnologias} alt="Tecnologías" className="stack-img"/>
+          </section>
+
           <footer className="footer">
             <p>© 2026 Camilo - Todos los derechos reservados</p>
           </footer>
         </article>
       </div>
-
-      <aside className="sidebar-right">
-        <h3 className="Stack">Mi Stack</h3>
-        <img src={Tecnologias} alt="Tecnologías" />
-      </aside>
     </div>
   ); 
 }
