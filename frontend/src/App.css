@@ -204,12 +204,22 @@
 
 
 .sidebar-right {
-  position: fixed;       /* se fija al viewport */
-  top: 50%;              /* centrado vertical */
-  right: 90px;           /* pegado al margen derecho real */
+  position: fixed;
+  top: 50%;
+  right: 20px;          /* margen real */
   transform: translateY(-50%);
-  width: 200px;          /* ancho controlado */
+  width: 200px;
   text-align: center;
+}
+
+/* Ajuste responsive: en pantallas medianas y pequeñas */
+@media (max-width: 1024px) {
+  .sidebar-right {
+    position: static;   /* ya no fijo */
+    transform: none;
+    width: 100%;        /* ocupa todo el ancho */
+    margin-top: 20px;   /* se separa del contenido */
+  }
 }
 
 .sidebar-right img {
@@ -324,3 +334,4 @@ body {
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
   transition: 0.3s ease;
 }
+
