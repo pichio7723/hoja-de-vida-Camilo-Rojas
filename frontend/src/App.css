@@ -326,8 +326,11 @@
 
 body {
   margin: 0;
-  background-color: #000000; /* negro puro para los laterales */
+  padding: 0;
+  background: url("https://i.gifer.com/7Ik1.gif") no-repeat center center fixed;
+  background-size: cover; /* hace que el GIF se ajuste a toda la pantalla */
 }
+
 
 .Stack {
   font-size: 1.8rem;
