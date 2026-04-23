@@ -206,7 +206,7 @@
 .sidebar-right {
   position: fixed;
   top: 50%;
-  right: 20px;          /* margen real */
+  right: 0;          /* margen real */
   transform: translateY(-50%);
   width: 200px;
   text-align: center;
