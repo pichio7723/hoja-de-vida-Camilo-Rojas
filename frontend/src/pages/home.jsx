@@ -4,6 +4,8 @@ import HojaDeVida from "../components/hoja_de_vida";
 import Tecnologias from "../assets/tecnologias.png";
 import { useState } from "react";
 import FondoNegro from "../components/fondo_negro";
+import SocialButtons from "../components/SocialButtons";
+
 
 
 function Home() {
@@ -11,11 +13,8 @@ function Home() {
   return (
 
     <FondoNegro>
-
-
-    
-    <div className="page-layout">
-      <ContentContainer>
+  
+    <div className="page-layout">      
         <h1 className="home-title">Hola bienvenido a mi hoja de Vida </h1>
         <SocialButtons/>
         <br/><br/>
@@ -52,7 +51,6 @@ function Home() {
             <p>© 2026 Camilo - Todos los derechos reservados</p>
           </footer>
         </article>
-      </ContentContainer>
     </div>
 
     </FondoNegro>
