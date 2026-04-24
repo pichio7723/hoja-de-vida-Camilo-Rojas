@@ -3,12 +3,17 @@ import { Document, Page } from 'react-pdf';
 import HojaDeVida from "../components/hoja_de_vida";
 import Tecnologias from "../assets/tecnologias.png";
 import { useState } from "react";
-import ContentContainer from "../components/ContentContainer";
-import SocialButtons from "../components/socialbuttons";
+import FondoNegro from "../components/fondo_negro";
+
 
 function Home() {
   const [mostrarCV, setMostrarCV] = useState(false); //definicion de elementos del boton
   return (
+
+    <FondoNegro>
+
+
+    
     <div className="page-layout">
       <ContentContainer>
         <h1 className="home-title">Hola bienvenido a mi hoja de Vida </h1>
@@ -49,6 +54,8 @@ function Home() {
         </article>
       </ContentContainer>
     </div>
+
+    </FondoNegro>
   ); 
 }
 export default Home;

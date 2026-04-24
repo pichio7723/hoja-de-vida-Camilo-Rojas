@@ -455,3 +455,21 @@ body {
   border-radius: 10px;
   margin: 10px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fondo {
+  background-image: url("../assets/sonic.gif");
+  background-size: cover;
+  min-height: 100vh;
+}
