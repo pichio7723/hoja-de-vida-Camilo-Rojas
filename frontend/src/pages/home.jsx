@@ -3,13 +3,16 @@ import { Document, Page } from 'react-pdf';
 import HojaDeVida from "../components/hoja_de_vida";
 import Tecnologias from "../assets/tecnologias.png";
 import { useState } from "react";
+import ContentContainer from "../components/ContentContainer";
+import SocialButtons from "../components/socialbuttons";
 
 function Home() {
   const [mostrarCV, setMostrarCV] = useState(false); //definicion de elementos del boton
   return (
     <div className="page-layout">
-      <div className="home-container">
+      <ContentContainer>
         <h1 className="home-title">Hola bienvenido a mi hoja de Vida </h1>
+        <SocialButtons/>
         <br/><br/>
 
         <article className="home-article">
@@ -38,13 +41,13 @@ function Home() {
           <section className="stack-section">
             <h3 className="Stack">Mi Stack</h3>
             <img src={Tecnologias} alt="Tecnologías" className="stack-img"/>
-          </section>
+          </section>  
 
           <footer className="footer">
             <p>© 2026 Camilo - Todos los derechos reservados</p>
           </footer>
         </article>
-      </div>
+      </ContentContainer>
     </div>
   ); 
 }
