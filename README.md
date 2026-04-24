@@ -43,3 +43,5 @@ npm run dev
 #comando de extencion
 npm install react-router-dom
 npm install react-pdf
+npm install react-icons
+
