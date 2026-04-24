@@ -6,6 +6,7 @@ import programar from "../assets/programacion.jpg";
 import juegos from "../assets/zelda.gif";
 import Musica from "../assets/musica.jpg";
 import Lectura from "../assets/lectura.jpg"
+import FondoNegro from "../components/fondo_negro";
 
 
 
@@ -44,8 +45,15 @@ function Hobbies() {
   ];
 
   return (
+
+    <FondoNegro>
+
   <div className="container">
     <h2 className="title">Mis Hobbies Favoritos</h2>
+    <div className="hobbies"></div>
+
+
+  
 
     <div className="list">
       {hobbies.map((hobby) => (
@@ -66,6 +74,8 @@ function Hobbies() {
     </div>
 
   </div>
+
+  </FondoNegro>
 );
 }
 

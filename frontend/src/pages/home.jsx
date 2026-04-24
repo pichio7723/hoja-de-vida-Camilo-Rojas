@@ -3,10 +3,16 @@ import { Document, Page } from 'react-pdf';
 import HojaDeVida from "../components/hoja_de_vida";
 import Tecnologias from "../assets/tecnologias.png";
 import { useState } from "react";
+import FondoNegro from "../components/fondo_negro";
 
 function Home() {
   const [mostrarCV, setMostrarCV] = useState(false); //definicion de elementos del boton
   return (
+
+    <FondoNegro>
+
+
+    
     <div className="page-layout">
       <div className="home-container">
         <h1 className="home-title">Hola bienvenido a mi hoja de Vida </h1>
@@ -46,6 +52,8 @@ function Home() {
         </article>
       </div>
     </div>
+
+    </FondoNegro>
   ); 
 }
 export default Home;
