@@ -4,13 +4,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 function SocialButtons() {
   return (
     <div className="social-buttons">
-      <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer" className="btn">
+      <a href="https://github.com/pichio7723" target="_blank" rel="noopener noreferrer" className="btn">
         <FaGithub size={24} />
       </a>
-      <a href="https://www.linkedin.com/in/TU_USUARIO" target="_blank" rel="noopener noreferrer" className="btn">
+      <a href="https://www.linkedin.com/in/luis-camilo-rojas-rueda-731797405/" target="_blank" rel="noopener noreferrer" className="btn">
         <FaLinkedin size={24} />
       </a>
-      <a href="https://www.computrabajo.com/perfil/TU_USUARIO" target="_blank" rel="noopener noreferrer" className="btn">
+      <a href="https://candidato.co.computrabajo.com/candidate/home" target="_blank" rel="noopener noreferrer" className="btn">
         Computrabajo
       </a>
 
