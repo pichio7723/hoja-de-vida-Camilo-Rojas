@@ -4,18 +4,19 @@ import HojaDeVida from "../components/hoja_de_vida";
 import Tecnologias from "../assets/tecnologias.png";
 import { useState } from "react";
 import FondoNegro from "../components/fondo_negro";
+import SocialButtons from "../components/SocialButtons";
+
+
 
 function Home() {
   const [mostrarCV, setMostrarCV] = useState(false); //definicion de elementos del boton
   return (
 
     <FondoNegro>
-
-
-    
-    <div className="page-layout">
-      <div className="home-container">
+  
+    <div className="page-layout">      
         <h1 className="home-title">Hola bienvenido a mi hoja de Vida </h1>
+        <SocialButtons/>
         <br/><br/>
 
         <article className="home-article">
@@ -44,13 +45,12 @@ function Home() {
           <section className="stack-section">
             <h3 className="Stack">Mi Stack</h3>
             <img src={Tecnologias} alt="Tecnologías" className="stack-img"/>
-          </section>
+          </section>  
 
           <footer className="footer">
             <p>© 2026 Camilo - Todos los derechos reservados</p>
           </footer>
         </article>
-      </div>
     </div>
 
     </FondoNegro>

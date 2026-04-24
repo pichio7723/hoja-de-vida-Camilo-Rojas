@@ -207,7 +207,7 @@
   max-width: 1200px;
   box-sizing: border-box;    /* elimina el límite artificial */
   margin: 0;          /* quita el centrado automático */
-}
+} 
 
 
 .sidebar-right {
@@ -382,6 +382,30 @@ body {
   color: #000000;                  /* texto negro */
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* sombra más intensa al hover */
 }
+
+.social-buttons {
+  display: flex;
+  justify-content: center;   /* centra horizontalmente */
+  gap: 20px;                 /* espacio entre botones */
+  margin: 20px 0;
+}
+
+.btn {
+  background: #000;          /* fondo negro */
+  color: #fff;               /* texto blanco */
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* sombra blanca ligera */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);    /* efecto al pasar el mouse */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
+}
+
 
 
 
