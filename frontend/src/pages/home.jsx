@@ -1,4 +1,4 @@
-import Perfil from "../assets/sonic.gif"
+import Perfil from "../assets/sonic.JPG"
 import { Document, Page } from 'react-pdf';
 import HojaDeVida from "../components/hoja_de_vida";
 import Tecnologias from "../assets/tecnologias.png";
@@ -48,7 +48,10 @@ function Home() {
           </section>  
 
           <footer className="footer">
-            <p>© 2026 Camilo - Todos los derechos reservados</p>
+            <p>© 2026 Camilo - Todos los derechos reservados
+              <br></br>
+              Email: luiscamilorojasrueda@gmail.com Telefono: 3118471307
+            </p>
           </footer>
         </article>
     </div>
