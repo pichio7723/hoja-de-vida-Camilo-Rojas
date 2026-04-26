@@ -4,7 +4,7 @@ import HojaDeVida from "../components/hoja_de_vida";
 import Tecnologias from "../assets/tecnologias.png";
 import { useState } from "react";
 import FondoNegro from "../components/fondo_negro.jsx";
-import SocialButtons from "../components/SocialButtons";
+import SocialButtons from "../components/socialButtons.jsx";
 
 
 
